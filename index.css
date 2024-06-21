@@ -14,3 +14,23 @@ body {
     align-items: center;
     height: 100vh;
 }
+
+ul li {
+    width: 200px;
+    height: 35px;
+
+    display: flex;
+    align-items: center;
+    margin: 1.5em;
+    padding: 1em;
+
+    background: rgb(43, 43, 43);
+    position: relative;
+    color: #fff;
+    border-radius: 5px;
+}
+
+ul li::before , ul li::after {
+    content: " ";
+    position: absolute;
+}
