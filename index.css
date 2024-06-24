@@ -33,4 +33,24 @@ ul li {
 ul li::before , ul li::after {
     content: " ";
     position: absolute;
+    z-index: -1;
+    border-radius: 5px;
+
+    width: 105%;
+    transition: all .4s;
+}
+
+ul li::before {
+    left: 0%;
+    height: 130%;
+
+    background: linear-gradient(to right, #021B79, #0575E6);
+}
+
+ul li::after {
+    left: -10%;
+    height: 120%;
+    background: #ffffff56;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
 }
