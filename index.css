@@ -54,3 +54,11 @@ ul li::after {
     backdrop-filter: blur(10px);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.164);
 }
+
+ul li:hover::before {
+    transform: translateX(-2.5%);
+}
+
+ul li:hover::after {
+    transform: translateX(15%);
+}
